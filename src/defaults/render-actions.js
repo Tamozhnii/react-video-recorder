@@ -61,11 +61,11 @@ const Actions = ({
     if (isReplayingVideo) {
       return (
         <Button
-          type='button'
+          type="button"
           onClick={onStopReplaying}
-          data-qa='start-replaying'
+          data-qa="start-replaying"
         >
-          Use another video
+          Перезаписать
         </Button>
       )
     }
@@ -73,9 +73,9 @@ const Actions = ({
     if (isRecording) {
       return (
         <StopButton
-          type='button'
+          type="button"
           onClick={onStopRecording}
-          data-qa='stop-recording'
+          data-qa="stop-recording"
         />
       )
     }
@@ -83,28 +83,28 @@ const Actions = ({
     if (isCameraOn && streamIsReady) {
       return (
         <RecordButton
-          type='button'
+          type="button"
           onClick={onStartRecording}
-          data-qa='start-recording'
+          data-qa="start-recording"
         />
       )
     }
 
     if (useVideoInput) {
       return (
-        <Button type='button' onClick={onOpenVideoInput} data-qa='open-input'>
-          Upload a video
+        <Button type="button" onClick={onOpenVideoInput} data-qa="open-input">
+          Загрузить видео
         </Button>
       )
     }
 
     return shouldUseVideoInput ? (
-      <Button type='button' onClick={onOpenVideoInput} data-qa='open-input'>
-        Record a video
+      <Button type="button" onClick={onOpenVideoInput} data-qa="open-input">
+        Записать
       </Button>
     ) : (
-      <Button type='button' onClick={onTurnOnCamera} data-qa='turn-on-camera'>
-        Turn my camera ON
+      <Button type="button" onClick={onTurnOnCamera} data-qa="turn-on-camera">
+        Включить камеру
       </Button>
     )
   }
