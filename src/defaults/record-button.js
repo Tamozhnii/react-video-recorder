@@ -52,9 +52,9 @@ Button.defaultProps = {
 export default (props) => (
   <RecWrapper>
     <Instructions>
-      <div>PRESS </div>
-      <InstuctionsHighlight> REC </InstuctionsHighlight>
-      WHEN READY
+      <div>НАЖМИТЕ </div>
+      <InstuctionsHighlight> ЗАПИСЬ </InstuctionsHighlight>
+      ДЛЯ НАЧАЛА ЗАПИСИ
     </Instructions>
 
     <ButtonBorder>
